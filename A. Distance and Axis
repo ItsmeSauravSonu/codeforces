@@ -1,0 +1,29 @@
+https://codeforces.com/contest/1401/problem/A
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+ 
+ 
+public class A1401 {
+ 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner scn = new Scanner(System.in);
+int t = scn.nextInt();
+while(t-->0) {
+	int n = scn.nextInt();
+	int k = scn.nextInt();
+	if(n<k) {
+		System.out.println((k-n));
+	}
+	else if(n%2==k%2) {
+		System.out.println(0);
+	}
+	else {
+		System.out.println(1);
+	}
+}
+	}
+ 
+}
