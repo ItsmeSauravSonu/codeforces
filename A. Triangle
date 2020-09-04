@@ -1,0 +1,27 @@
+https://codeforces.com/problemset/problem/6/A
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+ 
+public class test {
+ 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scn = new Scanner(System.in);
+		int a = scn.nextInt();
+		int b = scn.nextInt();
+		int c = scn.nextInt();
+		int d = scn.nextInt();
+		if((a < b+c && b < a+c && c < a+b )|| (a < b+d && b <a+d && d<a+b)||(a<d+c && d<a+c && c<a+d)||(d<b+c && b<d+c && c<d+b)) {
+			System.out.println("TRIANGLE");
+		}
+		else if((a==b+c)||(b==a+c)||(c==a+b)||(a==b+d)||(b==a+d)||(d==a+b)||(a==d+c)||(d==a+c)||(c==a+d)||(d==b+c)||(b==d+c)||(c==d+b)) {
+			System.out.println("SEGMENT");
+		}
+		else {
+			System.out.println("IMPOSSIBLE");
+		}
+ 
+}
+}
