@@ -1,0 +1,18 @@
+https://codeforces.com/contest/1/problem/A
+
+import java.util.Scanner;
+import java.lang.*;
+ 
+public class tiles {
+ 
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		double n = scn.nextInt();
+		double m = scn.nextInt();
+		double a = scn.nextInt();
+		
+		
+		System.out.println((long)(Math.ceil(n/a) * Math.ceil(m/a)));	
+	}
+ 
+}
