@@ -1,0 +1,65 @@
+import java.util.Scanner;
+ 
+public class YetAnotherTwoIntegersProblem {
+ 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scn = new Scanner(System.in);
+		int t = scn.nextInt();
+		while (t-- > 0) {
+			int c = scn.nextInt();
+			int b = scn.nextInt();
+			if(c>b) {
+		      int temp = b;
+		      b=c;
+		      c=temp;
+			}
+			int ans = 0;
+while(b>c) {
+	int d = b - c;
+	int q = 0;
+	if (d >= 10) {
+		q = d / 10;
+		c += q * 10;
+	} else if (d == 9) {
+		q = d / 9;
+		c += q * 9;
+	} else if (d == 8) {
+		q = d / 8;
+		c += q * 8;
+	} else if (d == 7) {
+		q = d / 7;
+		c += q * 7;
+	} else if (d == 6) {
+		q = d / 6;
+		c += q * 6;
+	} else if (d == 5) {
+		q = d / 5;
+		c += q * 5;
+	}
+	else if (d == 4) {
+		q = d / 4;
+		c += q * 4;
+	}
+	else if (d == 3) {
+		q = d / 3;
+		c += q * 3;
+	}
+	else if (d == 2) {
+		q = d / 2;
+		c += q * 2;
+	} 
+	else if (d == 1) {
+		q = d / 1;
+		c += q * 1;
+	}
+	ans += q;
+ 
+ 
+}
+									System.out.println(ans);
+		}
+		
+			}
+ 
+}
