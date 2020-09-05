@@ -1,0 +1,33 @@
+import java.util.Scanner;
+ 
+public class Nastya_Is_Reading_a_Book {
+ 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		int sum =0;
+			int [] a = new int[1000000];
+			int [] b = new int[1000000];
+			
+				for(int i=0;i<n;i++) {
+					a[i]=scn.nextInt();
+					b[i]=scn.nextInt();
+				}
+				
+		int p = scn.nextInt();
+		for(int i=0;i<n;i++) {
+			if(p>=a[i] && p<=b[i] ) {
+				break;
+			}
+			else {
+				sum++;
+			}
+				
+		}
+		System.out.println(n-sum);
+		
+ 
+	}
+ 
+}
