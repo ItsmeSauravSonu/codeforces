@@ -1,0 +1,28 @@
+import java.util.Arrays;
+import java.util.Scanner;
+ 
+public class collecting_coins {
+ 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scn = new Scanner(System.in);
+		int t = scn.nextInt();
+		while (t-- > 0) {
+			int arr[] = new int[3];
+			for (int i = 0; i < 3; i++) {
+				arr[i] = scn.nextInt();
+			}
+			int n = scn.nextInt();
+			Arrays.sort(arr);
+			n-=2*arr[2]-arr[1]-arr[0];
+			if(n<0 || n%3!=0) {
+				System.out.println("NO");
+			}
+			else {
+				System.out.println("YES");
+			}
+			
+		}
+	}
+ 
+}
